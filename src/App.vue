@@ -1,11 +1,16 @@
 <template>
   <div>
-
+    <topBar></topBar>
   </div>
 </template>
 
 <script>
-export default {}
+import topBar from '@/components/topBar.vue'
+export default {
+  components: {
+    topBar
+  }
+}
 </script>
 
 <style>
