@@ -1,6 +1,8 @@
 [
   {
     "tag": "专辑",
+    "type": "half",
+    "color": false,
     "content": [
       {
         "text": "热游推荐",
@@ -38,6 +40,8 @@
   },
   {
     "tag": "儿童",
+    "type": "half",
+    "color": true,
     "content": [
       {
         "text": "填颜色",
@@ -75,6 +79,8 @@
   },
   {
     "tag": "动作",
+    "type": "half",
+    "color": true,
     "content": [
       {
         "text": "格斗",
@@ -116,6 +122,8 @@
   },
   {
     "tag": "射击",
+    "type": "half",
+    "color": true,
     "content": [
       {
         "text": "穿越防线",
@@ -153,6 +161,8 @@
   },
   {
     "tag": "益智",
+    "type": "half",
+    "color": false,
     "content": [
       {
         "text": "连连看",
@@ -198,6 +208,8 @@
   },
   {
     "tag": "休闲",
+    "type": "half",
+    "color": true,
     "content": [
       {
         "text": "斗地主",
@@ -239,6 +251,8 @@
   },
   {
     "tag": "体育",
+    "type": "half",
+    "color": true,
     "content": [
       {
         "text": "赛车",
@@ -284,6 +298,7 @@
   },
   {
     "tag": "冒险",
+    "type": "half",
     "content": [
       {
         "text": "中文精选",
@@ -319,6 +334,159 @@
       },
       {
         "text": "3D游戏",
+        "hotLevel": 0
+      }
+    ]
+  },
+  {
+    "tag": "女生",
+    "type": "full",
+    "content": [
+      {
+        "text": "阿su",
+        "hotLevcel": 0
+      },
+      {
+        "text": "e美图",
+        "hotLevcel": 0
+      },
+      {
+        "text": "美人鱼",
+        "hotLevcel": 0
+      },
+      {
+        "text": "公主",
+        "hotLevcel": 0
+      },
+      {
+        "text": "古代换装",
+        "hotLevcel": 0
+      },
+      {
+        "text": "做饭",
+        "hotLevcel": 0
+      },
+      {
+        "text": "精灵",
+        "hotLevcel": 0
+      },
+      {
+        "text": "化妆",
+        "hotLevcel": 0
+      },
+      {
+        "text": "美甲",
+        "hotLevcel": 0
+      },
+      {
+        "text": "婚纱",
+        "hotLevcel": 0
+      },
+      {
+        "text": "美发",
+        "hotLevcel": 0
+      },
+      {
+        "text": "餐厅",
+        "hotLevcel": 0
+      },
+      {
+        "text": "蛋糕",
+        "hotLevcel": 0
+      },
+      {
+        "text": "礼服",
+        "hotLevcel": 0
+      },
+      {
+        "text": "布置",
+        "hotLevcel": 0
+      },
+      {
+        "text": "宠物",
+        "hotLevcel": 0
+      },
+      {
+        "text": "购物",
+        "hotLevcel": 0
+      },
+      {
+        "text": "芭比",
+        "hotLevcel": 0
+      },
+      {
+        "text": "制作",
+        "hotLevcel": 0
+      },
+      {
+        "text": "明星",
+        "hotLevcel": 0
+      },
+      {
+        "text": "养成",
+        "hotLevcel": 0
+      },
+      {
+        "text": "宝贝",
+        "hotLevcel": 0
+      },
+      {
+        "text": "打工挣钱",
+        "hotLevcel": 0
+      }
+    ]
+  },
+  {
+    "tag": "合辑",
+    "type": "full",
+    "color": true,
+    "content": [
+      {
+        "text": "完美漂移",
+        "hotLevel": 1
+      },
+      {
+        "text": "百战沙城",
+        "hotLevel": 0
+      },
+      {
+        "text": "以太之光",
+        "hotLevel": 0
+      },
+      {
+        "text": "传奇霸主",
+        "hotLevel": 1
+      },
+      {
+        "text": "莽荒纪2",
+        "hotLevel": 0
+      },
+      {
+        "text": "奥奇传说",
+        "hotLevel": 2
+      },
+      {
+        "text": "天空之舞",
+        "hotLevel": 0
+      },
+      {
+        "text": "魔塔奇兵",
+        "hotLevel": 0
+      },
+      {
+        "text": "皮卡堂",
+        "hotLevel": 2
+      },
+      {
+        "text": "天命神话",
+        "hotLevel": 0
+      },
+      {
+        "text": "笑傲江湖",
+        "hotLevel": 0
+      },
+      {
+        "text": "4399兵法三十七计 止战之初，全战开启",
         "hotLevel": 0
       }
     ]

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="top">
-      <div class="group" v-for="(i, index) in games" :key="index">
+      <div class="group" v-for="(i, index) in games" :key="index" :type="i.type" :color="i.color">
         <div class="tag">{{ i.tag }}</div>
         <a class="games" v-for="(j, index2) in i.content" :key="index2" :hotLevel='j.hotLevel'>{{ j.text }}</a>
       </div>
@@ -13,332 +13,16 @@
 export default {
   data() {
     return {
-      games: [
-        {
-          tag: '专辑',
-          content: [
-            {
-              text: '热游推荐',
-              hotLevel: 1
-            },
-            {
-              text: '主题游戏',
-              hotLevel: 0
-            },
-            {
-              text: '最新游戏',
-              hotLevel: 0
-            },
-            {
-              text: '双人小游戏',
-              hotLevel: 2
-            },
-            {
-              text: '无敌版',
-              hotLevel: 0
-            },
-            {
-              text: '单人',
-              hotLevel: 1
-            },
-            {
-              text: '冰火人',
-              hotLevel: 0
-            },
-            {
-              text: '三人',
-              hotLevel: 1
-            }
-          ]
-        },
-        {
-          tag: '儿童',
-          content: [
-            {
-              text: '填颜色',
-              hotLevel: 0
-            },
-            {
-              text: '儿歌故事',
-              hotLevel: 2
-            },
-            {
-              text: '小马宝莉',
-              hotLevel: 0
-            },
-            {
-              text: '海绵宝宝',
-              hotLevel: 0
-            },
-            {
-              text: '朵拉',
-              hotLevel: 0
-            },
-            {
-              text: '学习',
-              hotLevel: 0
-            },
-            {
-              text: '玩具',
-              hotLevel: 0
-            },
-            {
-              text: '托马斯',
-              hotLevel: 0
-            }
-          ]
-        },
-        {
-          tag: '动作',
-          content: [
-            {
-              text: '格斗',
-              hotLevel: 0
-            },
-            {
-              text: '乐高',
-              hotLevel: 0
-            },
-            {
-              text: '男生游戏',
-              hotLevel: 0
-            },
-            {
-              text: '三国',
-              hotLevel: 0
-            },
-            {
-              text: '功夫',
-              hotLevel: 1
-            },
-            {
-              text: '变形金刚',
-              hotLevel: 0
-            },
-            {
-              text: '火柴人',
-              hotLevel: 0
-            },
-            {
-              text: '西游记',
-              hotLevel: 0
-            },
-            {
-              text: '机器人',
-              hotLevel: 0
-            }
-          ]
-        },
-        {
-          tag: '射击',
-          content: [
-            {
-              text: '穿越防线',
-              hotLevel: 0
-            },
-            {
-              text: '狙击手',
-              hotLevel: 0
-            },
-            {
-              text: '反恐精英',
-              hotLevel: 0
-            },
-            {
-              text: '大炮',
-              hotLevel: 0
-            },
-            {
-              text: '战斗机',
-              hotLevel: 0
-            },
-            {
-              text: '特种兵',
-              hotLevel: 0
-            },
-            {
-              text: '坦克',
-              hotLevel: 0
-            },
-            {
-              text: '枪战特警',
-              hotLevel: 0
-            }
-          ]
-        },
-        {
-          tag: '益智',
-          content: [
-            {
-              text: '连连看',
-              hotLevel: 2
-            },
-            {
-              text: '解谜',
-              hotLevel: 0
-            },
-            {
-              text: '拼图',
-              hotLevel: 0
-            },
-            {
-              text: '迷宫',
-              hotLevel: 0
-            },
-            {
-              text: '大富翁',
-              hotLevel: 0
-            },
-            {
-              text: '找茬',
-              hotLevel: 0
-            },
-            {
-              text: '塔防',
-              hotLevel: 0
-            },
-            {
-              text: '找东西',
-              hotLevel: 0
-            },
-            {
-              text: '麻将',
-              hotLevel: 0
-            },
-            {
-              text: '小火车',
-              hotLevel: 0
-            }
-          ]
-        },
-        {
-          tag: '休闲',
-          content: [
-            {
-              text: '斗地主',
-              hotLevel: 1
-            },
-            {
-              text: '祖玛',
-              hotLevel: 0
-            },
-            {
-              text: '黄金矿工',
-              hotLevel: 0
-            },
-            {
-              text: '消消看',
-              hotLevel: 0
-            },
-            {
-              text: '吃豆豆',
-              hotLevel: 0
-            },
-            {
-              text: '泡泡龙',
-              hotLevel: 0
-            },
-            {
-              text: '直升机',
-              hotLevel: 0
-            },
-            {
-              text: '农场',
-              hotLevel: 0
-            },
-            {
-              text: '组装游戏',
-              hotLevel: 0
-            }
-          ]
-        },
-        {
-          tag: '体育',
-          content: [
-            {
-              text: '赛车',
-              hotLevel: 0
-            },
-            {
-              text: '卡丁车',
-              hotLevel: 0
-            },
-            {
-              text: '越野车',
-              hotLevel: 0
-            },
-            {
-              text: '自行车',
-              hotLevel: 0
-            },
-            {
-              text: '汽车',
-              hotLevel: 0
-            },
-            {
-              text: '停车',
-              hotLevel: 0
-            },
-            {
-              text: '篮球',
-              hotLevel: 0
-            },
-            {
-              text: '足球',
-              hotLevel: 2
-            },
-            {
-              text: '过山车',
-              hotLevel: 0
-            },
-            {
-              text: '台球',
-              hotLevel: 0
-            }
-          ]
-        },
-        {
-          tag: '冒险',
-          content: [
-            {
-              text: '中文精选',
-              hotLevel: 0
-            },
-            {
-              text: '大鱼吃小鱼',
-              hotLevel: 1
-            },
-            {
-              text: '动漫游戏',
-              hotLevel: 0
-            },
-            {
-              text: '冒险岛',
-              hotLevel: 0
-            },
-            {
-              text: '忍者',
-              hotLevel: 0
-            },
-            {
-              text: '跑酷',
-              hotLevel: 0
-            },
-            {
-              text: '战士',
-              hotLevel: 0
-            },
-            {
-              text: '闯关',
-              hotLevel: 1
-            },
-            {
-              text: '3D游戏',
-              hotLevel: 0
-            }
-          ]
-        }
-      ]
+      games: []
+    }
+  },
+  created() {
+    this.initGames()
+  },
+  methods: {
+    async initGames() {
+      const { data: res } = await this.$http.get('/data/games.json')
+      this.games = res
     }
   }
 }
@@ -353,11 +37,16 @@ export default {
   .group {
     display: flex;
     justify-content: space-between;
-    width: 49%;
+    // width: 49%;
     margin: 3px 0;
     position: relative;
-    &:nth-child(1)::after,
-    &:nth-child(5)::after {
+    &[type='half'] {
+      width: 49%;
+    }
+    &[type='full'] {
+      width: 100%;
+    }
+    &[color='true']::after {
       content: '';
       position: absolute;
       left: 0;
@@ -367,6 +56,7 @@ export default {
       z-index: -1;
       background-color: rgb(249, 255, 240);
     }
+
     .tag {
       background-color: rgb(238, 255, 217);
       border: 1px solid rgb(152, 224, 38);
