@@ -2,7 +2,7 @@
   {
     "tag": "专辑",
     "type": "half",
-    "color": false,
+    "color": true,
     "content": [
       {
         "text": "热游推荐",
@@ -41,7 +41,7 @@
   {
     "tag": "儿童",
     "type": "half",
-    "color": true,
+    "color": false,
     "content": [
       {
         "text": "填颜色",
@@ -80,7 +80,7 @@
   {
     "tag": "动作",
     "type": "half",
-    "color": true,
+    "color": false,
     "content": [
       {
         "text": "格斗",
@@ -123,7 +123,7 @@
   {
     "tag": "射击",
     "type": "half",
-    "color": true,
+    "color": false,
     "content": [
       {
         "text": "穿越防线",
@@ -162,7 +162,7 @@
   {
     "tag": "益智",
     "type": "half",
-    "color": false,
+    "color": true,
     "content": [
       {
         "text": "连连看",
@@ -209,7 +209,7 @@
   {
     "tag": "休闲",
     "type": "half",
-    "color": true,
+    "color": false,
     "content": [
       {
         "text": "斗地主",
@@ -252,7 +252,7 @@
   {
     "tag": "体育",
     "type": "half",
-    "color": true,
+    "color": false,
     "content": [
       {
         "text": "赛车",
@@ -299,6 +299,7 @@
   {
     "tag": "冒险",
     "type": "half",
+    "color": false,
     "content": [
       {
         "text": "中文精选",
@@ -341,6 +342,7 @@
   {
     "tag": "女生",
     "type": "full",
+    "color": true,
     "content": [
       {
         "text": "阿su",
