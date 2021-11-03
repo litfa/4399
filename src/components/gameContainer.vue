@@ -9,7 +9,7 @@
       </a>
     </div>
     <div class="content">
-      <a class="game" v-for="(game, index) in urls" :key="index" :href="game.href" target="_blank">
+      <a class="game" v-for="(game, index) in games" :key="index" :href="game.href" target="_blank">
         <el-image lazy fit="cover" class="image" :src="game.src"></el-image>
         <span class="name">{{game.name}}</span>
       </a>
@@ -690,7 +690,7 @@ export default {
       ]
     }
   },
-  props: ['title', 'url']
+  props: ['title', 'url', 'games']
 }
 </script>
 
@@ -752,3 +752,31 @@ export default {
   }
 }
 </style>
+无敌版坦克
+网页游戏大全
+连连看
+全集
+宝贝游戏
+公主
+大鱼吃小鱼
+海绵宝宝
+组装专题
+足球
+密室逃脱
+解谜
+二次元
+单人
+黄金矿工集
+塔防游戏
+男生游戏精选
+闯关
+打工挣钱
+宠物
+做饭
+反恐精英
+越野车
+格斗
+蛋糕
+汉堡
+汽车
+三人

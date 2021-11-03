@@ -4,7 +4,7 @@
     <logoBar></logoBar>
     <gameTypeBar></gameTypeBar>
     <gameTypeBox></gameTypeBox>
-    <gameContainer title="最新好玩小游戏列表"></gameContainer>
+    <gameContainer v-for="i in gameList" :key="i.title" :title="i.title" :url="i.href" :games="i.content"></gameContainer>
   </div>
 </template>
 
@@ -21,6 +21,20 @@ export default {
     gameTypeBar,
     gameTypeBox,
     gameContainer
+  },
+  data() {
+    return {
+      gameList: []
+    }
+  },
+  created() {
+    this.initGameList()
+  },
+  methods: {
+    async initGameList() {
+      const { data: res } = await this.$http.get('/data/gameList.json')
+      this.gameList = res
+    }
   }
 }
 </script>
