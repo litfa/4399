@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     async initGames() {
-      const { data: res } = await this.$http.get('/data/games.json')
+      const { data: res } = await this.$http.get('./data/games.json')
       this.games = res
     }
   }
