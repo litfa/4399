@@ -696,7 +696,8 @@ export default {
 
 <style lang="less" scoped>
 .container {
-  width: 720px;
+  width: 100%;
+  // width: 400px;
   // padding
   .topBar {
     width: 100%;
@@ -723,6 +724,8 @@ export default {
     }
   }
   .content {
+    border: 1px solid rgb(192, 235, 124);
+    border-top: none;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
