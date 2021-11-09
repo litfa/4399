@@ -2,7 +2,7 @@
 [http://4399.com](http://4399.com)
 
 4399前端界面  
-(项目预览)[https://litfa.github.io/4399/dist/]
+[预览](https://litfa.github.io/4399/dist/)
 
 内容仅供学习交流，不做商业用途
 
